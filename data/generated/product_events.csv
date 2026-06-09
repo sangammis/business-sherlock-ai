@@ -1,0 +1,4 @@
+event_id,date,event_type,description
+EV001,2026-03-01,Payment Gateway Upgrade,Payment gateway upgraded to version 2.0
+EV002,2026-06-01,Mobile App Release,Mobile application version 3.2 released
+EV003,2026-09-01,Shipping Provider Migration,Migrated logistics operations to a new shipping partner
