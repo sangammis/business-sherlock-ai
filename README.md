@@ -1,4 +1,4 @@
-# 🔎 Business Sherlock AI
+# Business Sherlock AI
 
 ## Autonomous Business Investigation Agent
 
@@ -10,7 +10,7 @@ Built for the **Google Gemini + Elastic MCP Hackathon**.
 
 ---
 
-# 🚀 Problem Statement
+# Problem Statement
 
 Business teams often struggle to identify the root causes behind:
 
@@ -26,7 +26,7 @@ Business Sherlock AI automates this process.
 
 ---
 
-# 💡 Solution
+# Solution
 
 Business Sherlock AI acts as an autonomous investigation agent.
 
@@ -44,7 +44,7 @@ The agent:
 
 ---
 
-# 🏗 Architecture
+# Architecture
 
 User Query
 ↓
@@ -66,7 +66,7 @@ Streamlit Dashboard
 
 ---
 
-# 🧠 Key Features
+# Key Features
 
 ### Intelligent Investigation Planning
 
@@ -100,7 +100,7 @@ Streamlit-based UI for business users.
 
 ---
 
-# ⚙️ Tech Stack
+# Tech Stack
 
 ### AI
 
@@ -125,7 +125,7 @@ Streamlit-based UI for business users.
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 business-sherlock-ai/
 
@@ -153,7 +153,7 @@ app.py
 
 ---
 
-# 📊 Investigation Scenarios
+# Investigation Scenarios
 
 ### Revenue Investigation
 
@@ -191,7 +191,7 @@ Shipping Provider Migration caused logistics disruptions.
 
 ---
 
-# 🔍 How Elastic Is Used
+# How Elastic Is Used
 
 Elastic acts as the investigation knowledge layer.
 
@@ -206,7 +206,7 @@ The agent retrieves evidence from Elastic and correlates information across data
 
 ---
 
-# 🛠 Local Setup
+# Local Setup
 
 Clone repository:
 
@@ -237,7 +237,7 @@ streamlit run app.py
 
 ---
 
-# 🎥 Demo
+# Demo
 
 Demo Video:
 
@@ -245,13 +245,13 @@ Demo Video:
 
 ---
 
-# 🌐 Live Application
+# Live Application
 
-[Add Deployment URL]
+https://sangammis-business-sherlock-ai-app-hazzns.streamlit.app/
 
 ---
 
-# 🚧 Future Improvements
+# Future Improvements
 
 * Elastic MCP Integration
 * Investigation Memory
@@ -261,7 +261,7 @@ Demo Video:
 
 ---
 
-# 📜 License
+# License
 
 MIT License
 
