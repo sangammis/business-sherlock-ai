@@ -15,7 +15,9 @@ def build_prompt(
     evidence
 ):
     return f"""
-You are a Senior Business Operations Analyst.
+You are an expert Business Operations Analyst.
+
+Your job is to investigate business incidents using the provided evidence.
 
 User Question:
 {user_query}
@@ -26,52 +28,89 @@ Investigation Type:
 Evidence:
 {evidence}
 
-Analyze the evidence and provide:
+Analyze the evidence and generate a professional business investigation report.
 
-1. Root Cause
-2. Confidence Level
-3. Business Impact
-4. Recommended Actions
+Use the following structure exactly:
 
-Write a professional investigation report.
+# Executive Summary
+
+Provide a brief overview of the incident.
+
+# Root Cause
+
+Identify the most likely root cause and explain why.
+
+# Confidence Level
+
+State:
+- High
+- Medium
+- Low
+
+and explain your confidence.
+
+# Business Impact
+
+Describe:
+- Revenue impact
+- Customer impact
+- Operational impact
+- Reputational impact
+
+# Recommended Actions
+
+Provide:
+1. Immediate Actions
+2. Short-Term Actions
+3. Long-Term Preventive Actions
+
+Important Rules:
+- Base conclusions only on the provided evidence.
+- Do not invent facts.
+- Do not include any author name.
+- Do not include "Prepared By".
+- Do not include signatures.
+- Return only the report in markdown format.
 """
 
 
 def investigate(user_query):
 
-    # Step 1
+    # Step 1: Determine investigation type
     investigation_type = (
         determine_investigation_type(
             user_query
         )
     )
 
-    # Step 2
+    # Step 2: Collect evidence
     evidence = (
         collect_evidence(
             investigation_type
         )
     )
 
-    # Step 3
+    # Step 3: Build prompt
     prompt = build_prompt(
         user_query,
         investigation_type,
         evidence
     )
 
-    # Step 4
+    # Step 4: Generate report
     response = model.generate_content(
         prompt
     )
 
-    # Step 5
+    # Step 5: Return report
     return response.text
 
 
 if __name__ == "__main__":
 
-    query = ("Investigate app crashes after release")
+    query = (
+        "Investigate app crashes after release"
+    )
 
     report = investigate(
         query
