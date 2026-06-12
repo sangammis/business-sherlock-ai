@@ -45,7 +45,7 @@ The agent:
 ---
 
 # Architecture
-
+```
 User Query
 ↓
 Planner
@@ -63,7 +63,7 @@ Gemini Reasoning Engine
 Investigation Report
 ↓
 Streamlit Dashboard
-
+```
 ---
 
 # Key Features
@@ -126,7 +126,7 @@ Streamlit-based UI for business users.
 ---
 
 # Project Structure
-
+```
 business-sherlock-ai/
 
 agent/
@@ -135,22 +135,20 @@ agent/
 ├── reasoning.py
 ├── gemini_client.py
 └── config.py
-
 elastic/
 ├── elastic_client.py
 ├── create_indexes.py
 ├── load_data.py
 └── search_queries.py
-
 scripts/
 ├── generate_sales.py
 ├── generate_tickets.py
 ├── generate_reviews.py
 ├── generate_events.py
 └── generate_web_analytics.py
-
 app.py
 
+```
 ---
 
 # Investigation Scenarios
@@ -234,14 +232,6 @@ GEMINI_API_KEY=...
 Run Streamlit:
 
 streamlit run app.py
-
----
-
-# Demo
-
-Demo Video:
-
-[Add Devpost Demo Video Link]
 
 ---
 
